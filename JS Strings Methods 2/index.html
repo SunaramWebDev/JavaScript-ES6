@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript String Methods</title>
+    <style>
+        body{
+            background: #FFEDDB;
+        }
+        .about{
+            color: rgb(144, 143, 143);
+        }
+        code {
+            color: red; 
+            font-size: 18px; 
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>JavaScript String Method</h1>
+    <h3>Example 1 || JavaScrip String Length</h3>
+    <p id="ex1"></p>
+    <h3>Example 2 || Extracting String Parts</h3>
+    <p>There are 3 methods for extracting a part of a String</p>
+    <code style="color: red; font-size: 18px; font-weight: bold;">
+        <ul>
+            <li>slice(start, end)</li>
+            <li>substring(start, end)</li>
+            <li>substr(start, length)</li>
+        </ul></code>
+    <h3>Example 3 || slice(start, end)</h3>
+    <p id="ex3"></p>
+    <h3>Example 4 || slice(start)</h3>
+    <p id="ex4"></p>
+    <h3>Example 5 || string counting from the end:</h3>
+    <p id="ex5"></p>
+    <h3>Example 6 || return extracted parts</h3>
+    <p id="ex6"></p>
+    <h3>Example 7 || substring(start, end)</h3>
+    <p id="ex7"></p>
+    <h3>Example 8 || substr(start, end)</h3>
+    <p id="ex8"></p>
+    <h3>Example 9</h3>
+    <p id="ex9"></p>
+    <h3>Example 10</h3>
+    <p id="ex10"></p>
+    <h3>Example 11 || Replacing String Content</h3>
+    <h2 class="replace" style="color: red;"><code>replace()</code></h2>
+    <p id="ex11"></p>
+    <h3>Example 12 || replace()</h3>
+    <button onclick="myFunction()">Try it</button>
+    <p id="ex12">Please visit Microsoft!</p>
+
+    <h3>Example 13 || i flag insensitive</h3>
+    <button onclick="mywork()">Try to next </button>
+    <p id="ex13">Please visit Microsoft</p>
+    <h3>Example 14 || g flag global</h3>
+    <button onclick="myFunction1()">Try 2</button>
+    <p id="ex14">Please visit Microsoft and Microsoft!</p>
+    <h3>Example 15 || JavaScrip String ReplaceAll()</h3>
+    <p>In 2021, JavaScrip introduced the string method replaceAll():</p>
+    <p id="ex15"></p>
+    <h3>Example 16 || global flag (g)</h3>
+    <p id="ex16"></p>
+    <h3>Example 17 || Coverting to Upper and Lower Case</h3>
+    <code style="color: red; font-size: 18px; font-weight: bold;">
+        <ul>
+            <li>toUpperCase()</li>
+            <li>toLowerCase()</li>
+        </ul>
+    </code>
+    <p id="ex17"></p>
+    <h3>Example 18 || toUpperCase()</h3>
+    <button onclick="myFunction2()">Try it</button>
+    <p id="ex18">Hello World!</p>
+    <h3>Example 19 || toLowerCase()</h3>
+    <button onclick="myFunction3()">Click Me!</button>
+    <p id="ex19">Hello World!</p>
+    <h3>Example 20 || JavaScrip String concat()</h3>
+    <code style="color: red; font-size: 18px; font-weight: bold;">concat()</code>
+    <p class="about">The concat() method can be used instead of the pus operator. These two lines do the same:</p>
+    <p id="ex20"></p>
+    <h3>Example 21 || JavaScrip String trim()</h3>
+    <code style="color: red; font-size: 18px; font-weight: bold">trim()</code>
+    <p class="about">The <b>trim()</b> method removes whitespace from both sides of a string:</p>
+    <p id="ex21"></p>
+    <h3>Example 22 || JavaScrip String trimStart()</h3>
+    <code style="color: red; font-size: 18px; font-weight: bold">trimStart()</code>
+    <p class="about">The <b>trimStart()</b> method works like <b>trim()</b>, but removes whitespace only from the start of a string.</p>
+
+    <p id="ex22"></p>
+    <h3>Example 23 || JavaScrip String trimEnd()</h3>
+    <code>trimEnd()</code>
+    <p class="about">The <b>trimEnd()</b> method works like <b>trim()</b>, but removes whitespaceonly from the end of a string.</p>
+
+    <p id="ex23"></p>
+    <h3>Example 24 || JavaScript String Padding</h3>
+    <code>
+        <ul>
+            <li>padStart()</li>
+            <li>padEnd()</li>
+        </ul>
+    </code>
+    <p id="ex24"></p>
+    <h3>Example 25 || JavaScript String padStart()</h3>
+    <p class="about">Pad a string with "0" until it reaches the length 4:</p>
+    <p id="ex25"></p>
+    <p class="about">Pad a string with "X" until it reaches the length 4</p>
+    <p id="ex25-1"></p>
+    <h3>Example 26 || toString()</h3>
+    <p id="ex26"></p>
+    <h3>Example 27 || JavaScript String padEnd()</h3>
+    <p class="about">The <b>padEnd()</b> method pads a string from the end.</p>
+    <p class="about">"0"</p>
+    <p id="ex27"></p>
+    <p class="about">"X"</p>
+    <p id="ex27-1"></p>
+    <h3>Example 28</h3>
+    <p id="ex28"></p>
+    <h3>Example 29 || Extracting String Characters</h3>
+    <p class="about">There are 3 methods for extracting string Characters</p>
+    <code><ul>
+        <li>charAt(position)</li>
+        <li>charCodeAt(position)</li>
+        <li>Property access[]</li>
+    </ul></code>
+    <p id="ex29"></p>
+    <h3>Example 30 || JavaScript String charAt()</h3>
+    <p class="about">The <b>charAt()</b> method returns the character at a specified index (position) in a string:</p>
+    <p id="ex30"></p>
+    <h3>Example 31 || JavaScript String charCodeAt()</h3>
+    <p class="about">The <code>charCodeAt()</code> method returns the unicode of the character at a specfified index in a string:</p>
+    <p id="ex31"></p>
+    <h3>Example 32 || Property Access</h3>
+    <code>property access []</code>
+    <p class="about">ECMAScript 5 (2009) allows property access[] on strings:</p> 
+    <p id="ex32"></p>
+    <h3>Example 33 || JavaScript String split()</h3>
+    <p class="about">A string can be converted to an array with the <code>splite()</code>method:</p>
+    <p id="ex33"></p>
+    <h3>Example 34</h3>
+    <p id="ex34"></p>
+    <h3>Example 35</h3>
+    <p id="ex35"></p>
+    <h3>Example 36</h3>
+    <p id="ex36"></p>
+    <h3>Example 37</h3>
+    <p id="ex37"></p>
+
+</div>
+
+
+
+    <script src="script.js"></script>
+</body>
+</html>
